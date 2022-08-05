@@ -41,13 +41,15 @@
     <!-- Main sections of the site-->
     <main>
       <section class="hero">
-        <!-- Section with content about Ponderosa -->
-        <div class="hero__content">
+        <!-- <div class="hero__bg">
           <img
-            class="hero__background"
+            class="hero__bg-img"
             src="/img/andrew-coelho-aL7SA1ASVdQ-unsplash 1.jpg"
             alt="background picture"
           />
+        </div> -->
+        <!-- Section with content about Ponderosa -->
+        <div class="hero__content">
           <p class="hero__title">
             Ponderosa Inn offers comfortable accommodations for the entire
             family at affordable prices
@@ -61,34 +63,43 @@
         </div>
         <!-- Form for reserving -->
         <div class="reserving">
-          <a href="#" class="reserving__input">Reserve now</a>
-          <!-- Create query for reservation -->
-          <form class="reserving__choice">
-            <div class="reserving__param1 reserving__choice_view">
-              <label for="arrival-date">Arrival Date</label>
-              <input type="date" name="arrival-date" id="arrival-date" />
-              <div class="line1"></div>
-            </div>
-            <div class="reserving__param2 reserving__choice_view">
-              <label for="depature-date">Departure Date</label>
-              <input type="date" name="departure-date" id="departure-date" />
-              <div class="line1"></div>
-            </div>
-            <div class="reserving__param3 reserving__choice_view">
-              <label for="adults">Adults</label>
-              <input type="number" name="adults" id="adults" />
-              <div class="line1"></div>
-            </div>
-            <div class="reserving__param4 reserving__choice_view">
-              <label for="children">Children</label>
-              <input type="number" name="children" id="children" />
-              <div class="line1"></div>
-            </div>
-          </form>
-          <!-- Button for check avalability -->
-          <button class="reservine__check-avalibility">
-            check availability
-          </button>
+          <div class="reserving__wrap">
+            <!-- <a href="#" class="reserving__input">Reserve now</a> -->
+            <p class="reserving__input">Reserve now</p>
+            <!-- Create query for reservation -->
+            <form class="reserving__choice">
+              <div class="reserving__param">
+                <div class="reserving__param1 reserving__choice_view">
+                  <label for="arrival-date">Arrival Date</label>
+                  <input type="date" name="arrival-date" id="arrival-date" />
+                  <div class="line1"></div>
+                </div>
+                <div class="reserving__param2 reserving__choice_view">
+                  <label for="depature-date">Departure Date</label>
+                  <input
+                    type="date"
+                    name="departure-date"
+                    id="departure-date"
+                  />
+                  <div class="line1"></div>
+                </div>
+                <div class="reserving__param3 reserving__choice_view">
+                  <label for="adults">Adults</label>
+                  <input type="number" name="adults" id="adults" />
+                  <div class="line1"></div>
+                </div>
+                <div class="reserving__param4 reserving__choice_view">
+                  <label for="children">Children</label>
+                  <input type="number" name="children" id="children" />
+                  <div class="line1"></div>
+                </div>
+              </div>
+              <!-- Button for check avalability -->
+              <button class="reserving__check-avalibility" type="submit">
+                check availability
+              </button>
+            </form>
+          </div>
         </div>
       </section>
       <!-- Section ABOUT -->
