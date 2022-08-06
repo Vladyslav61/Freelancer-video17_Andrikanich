@@ -8,6 +8,23 @@
   font-weight: normal;
   font-style: normal;
 }
+h1 {
+  font-family: "TrajanPro-Regular";
+  font-size: 36px;
+  line-height: 1.61;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  color: #fff;
+}
+h2 {
+  font-family: "TrajanPro-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 1.1;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
 :root {
   --color-main-menu-items: #3e1b08;
   --color-bg-button-main-menu: #bc9548;
@@ -90,7 +107,6 @@ body {
 
 /* Section Hero */
 .hero {
-  /* background-image: url("/img/andrew-coelho-aL7SA1ASVdQ-unsplash\ 1.jpg"); */
   background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0) 32.7%,
@@ -105,29 +121,6 @@ body {
   width: 100%;
   min-width: 1420px;
 }
-
-/* .hero__bg {
-  display: block;
-  object-fit: cover;
-  height: 100vh;
-  width: 100%;
-
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: -1;
-  width: fit-content;
-} */
-/* .hero__bg-img {
-  height: 100vh;
-  object-fit: cover;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 32.7%,
-    rgba(8, 9, 1, 0.774869) 58.24%,
-    #0a0c01 99.79%
-  );
-} */
 .hero__content {
   /* border: 1px solid blueviolet; */
   max-width: 1504px;
@@ -136,12 +129,6 @@ body {
   text-align: center;
 }
 .hero__title {
-  font-family: "TrajanPro-Regular";
-  font-size: 36px;
-  line-height: 1.61;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #fff;
   max-width: 1504px;
   /* border: 1px solid red; */
   height: 116px;
@@ -250,5 +237,74 @@ body {
 
 /* Section ABOUT */
 .about {
-  padding: 280px 0 0 0;
+  padding-top: 280px;
+}
+.about__section-header {
+  width: 898px;
+  height: 366px;
+  margin: 0 auto 144px auto;
+  /* background-color: blanchedalmond; */
+}
+.line2 {
+  width: 136px;
+  height: 0px;
+  border: 1px solid var(--color-main-menu-items);
+  margin: 0 auto 0 auto;
+}
+.section-name {
+  font-family: var(--color-main-menu-items);
+  text-align: center;
+  padding-top: 96px;
+  margin-bottom: 48px;
+}
+.section-name > h2 {
+  margin: 0;
+}
+.about__text {
+  color: #231f20;
+  margin-bottom: 16px;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+.about__link {
+  width: 93px;
+  margin: 0 auto 0 auto;
+}
+.about__link > a {
+  color: var(--color-bg-button-main-menu);
+  text-decoration: none;
+  margin-bottom: 4px;
+}
+.about__link > a:hover {
+  color: var(--color-main-menu-items);
+  transition: 0.5s;
+}
+.line3 {
+  border: 1px solid var(--color-bg-button-main-menu);
+}
+
+/* Hotel Amenities */
+.about__amenities {
+  background: no-repeat url("/img/bg-hotel-eminites.jpg");
+  background-size: cover;
+  width: 100%;
+  color: var(--color-text-button-main-menu);
+}
+.about__amenities-text {
+  padding-top: 273px;
+  margin-bottom: 125px;
+  text-align: center;
+}
+.about__wrapper {
+  max-width: 1534px;
+  padding-bottom: 246px;
+}
+.about__list-amenities {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.about__item-list-amenities {
+  text-decoration: none;
+  text-transform: uppercase;
 }
