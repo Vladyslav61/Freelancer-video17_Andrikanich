@@ -10,6 +10,7 @@
 }
 h1 {
   font-family: "TrajanPro-Regular";
+  font-weight: 400;
   font-size: 36px;
   line-height: 1.61;
   letter-spacing: 0.1em;
@@ -18,7 +19,6 @@ h1 {
 }
 h2 {
   font-family: "TrajanPro-Regular";
-  font-style: normal;
   font-weight: 400;
   font-size: 96px;
   line-height: 1.1;
@@ -298,13 +298,35 @@ body {
 .about__wrapper {
   max-width: 1534px;
   padding-bottom: 246px;
+  margin: auto;
 }
 .about__list-amenities {
-  list-style-type: none;
+  /* border: 1px solid yellow; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* padding-left: 0; */
+  justify-content: center;
+  row-gap: 116px;
 }
 .about__item-list-amenities {
-  text-decoration: none;
   text-transform: uppercase;
+  margin: auto;
+}
+.about__item-list-amenities > p {
+  text-align: center;
+}
+.about__item-list-amenities-text {
+  text-transform: none;
+}
+.about__item-list-amenities > img {
+  display: block;
+  margin: auto;
+}
+.line4 {
+  border: 1px solid var(--color-bg-button-main-menu);
+  width: 144px;
+  margin: 60px auto 0;
+}
+.about__item-list-amenities:nth-child(3) {
+  color: var(--color-bg-button-main-menu);
 }
