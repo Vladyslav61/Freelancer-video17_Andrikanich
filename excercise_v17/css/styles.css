@@ -314,7 +314,13 @@ body {
 }
 .about__item-list-amenities > p {
   text-align: center;
+  text-decoration: none;
 }
+
+.about__item-list-amenities:hover {
+  color: var(--color-bg-button-main-menu);
+}
+
 .about__item-list-amenities-text {
   text-transform: none;
 }
