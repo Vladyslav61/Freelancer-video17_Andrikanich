@@ -25,6 +25,15 @@ h2 {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
+h3 {
+  font-family: "TrajanPro-Regular";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.61;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  color: #939598;
+}
 :root {
   --color-main-menu-items: #3e1b08;
   --color-bg-button-main-menu: #bc9548;
@@ -285,7 +294,9 @@ body {
 
 /* Hotel Amenities */
 .about__amenities {
-  background: no-repeat url("/img/bg-hotel-eminites.jpg");
+  position: relative;
+  background: no-repeat url("/img/bg-blure_hotel-amenities.svg"),
+    no-repeat url("/img/bg-hotel-eminites.jpg");
   background-size: cover;
   width: 100%;
   color: var(--color-text-button-main-menu);
@@ -342,15 +353,16 @@ body {
 .about__item-link > .about__second-text {
   display: none;
   text-align: center;
+  font-size: 14px;
   text-transform: none;
 }
 .about__item-link:hover > .about__second-text {
   display: block;
 }
 
-.about__item-list-amenities-text {
+/* .about__item-list-amenities-text {
   text-transform: none;
-}
+} */
 
 .line4 {
   border: 1px solid var(--color-bg-button-main-menu);
@@ -363,4 +375,55 @@ body {
 }
 .about__item-list-amenities:nth-child(3) {
   color: var(--color-bg-button-main-menu);
+}
+
+.big-logo {
+  display: block;
+  width: 375px;
+  height: 420px;
+  position: absolute;
+  top: 105px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Section OUR COZY ROOMS */
+.rooms {
+  padding-top: 288px;
+  margin: 0;
+}
+.rooms__section-header {
+}
+.rooms__section-name_position {
+  margin-bottom: 72px;
+}
+.rooms__text {
+  text-align: center;
+  /* margin: 0; */
+}
+.rooms__slider {
+  margin: 144px 0 144px;
+  height: 592px;
+  border: 1px solid red;
+}
+.rooms__img-line {
+  width: 288px;
+  height: 52px;
+  margin: 0 auto;
+  /* background-color: #dfc680; */
+}
+.rooms__img-line > p {
+  font-size: 14px;
+  color: var(--color-main-menu-items);
+  text-align: center;
+  margin-bottom: 24px;
+}
+.line5 {
+  border: 1px solid #ece9e7;
+}
+.rooms__slider-position {
+  margin-top: -2px;
+  width: 96px;
+  height: 0px;
+  border: 1px solid var(--color-main-menu-items);
 }
