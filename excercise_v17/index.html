@@ -124,7 +124,22 @@
             <div class="about__list-amenities">
               <div class="about__item-list-amenities">
                 <!-- COFEE BAR -->
-                <a href="#" class="about__item-link">
+                <!-- See styles: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+                <!-- Write same styles in css file -->
+                <!-- First one what you can do: add custom class name for each icon wrapper link. (--stroke modifer for svg who need to change stroke and --fill for fill) -->
+                <!-- End syles  !!!!!!!!!!!!!!!!!!!!!!!!!!-->
+                <style>
+                  .about__item-svg path {
+                    /* You can use this transition by default */
+                    transition: .3s ease-in-out;
+                  }
+
+                  .about__item-link--stroke:hover svg path {
+                    stroke: red;
+                  }
+                  /* You can write the same styles for fill property. If it doesn't work, you will try to remove fill="none" in svg tag */
+                </style>
+                <a href="#" class="about__item-link about__item-link--stroke">
                   <svg
                     class="about__item-svg"
                     width="44"
@@ -141,6 +156,7 @@
                     />
                   </svg>
                   <!-- For hover -->
+                  <!-- Вот это удаля !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
                   <svg
                     class="about__item-svg-hover"
                     width="44"
@@ -156,6 +172,7 @@
                       stroke-linecap="round"
                     />
                   </svg>
+                  <!-- Вот по сюда, всю свг, ты правильно !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
                   <p class="about__first-text">Coffee Bar</p>
                   <p class="about__second-text">Hidden text</p>
                   <div class="line4"></div>
