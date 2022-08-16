@@ -122,23 +122,8 @@
           <h1 class="about__amenities-text">hotel amenities</h1>
           <div class="about__wrapper">
             <div class="about__list-amenities">
+              <!-- COFEE BAR -->
               <div class="about__item-list-amenities">
-                <!-- COFEE BAR -->
-                <!-- See styles: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-                <!-- Write same styles in css file -->
-                <!-- First one what you can do: add custom class name for each icon wrapper link. (--stroke modifer for svg who need to change stroke and --fill for fill) -->
-                <!-- End syles  !!!!!!!!!!!!!!!!!!!!!!!!!!-->
-                <style>
-                  .about__item-svg path {
-                    /* You can use this transition by default */
-                    transition: .3s ease-in-out;
-                  }
-
-                  .about__item-link--stroke:hover svg path {
-                    stroke: red;
-                  }
-                  /* You can write the same styles for fill property. If it doesn't work, you will try to remove fill="none" in svg tag */
-                </style>
                 <a href="#" class="about__item-link about__item-link--stroke">
                   <svg
                     class="about__item-svg"
@@ -155,32 +140,17 @@
                       stroke-linecap="round"
                     />
                   </svg>
-                  <!-- For hover -->
-                  <!-- Вот это удаля !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-                  <svg
-                    class="about__item-svg-hover"
-                    width="44"
-                    height="50"
-                    viewBox="0 0 44 50"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M28.177 38.9551C23.7197 40.6885 14.155 40.2957 11.4837 35.7489C7.34181 28.6991 8.13075 19.6264 8.13075 19.6264C8.13075 19.6264 14.0308 22.3876 22.0741 22.3876C37.6465 22.3876 39.1493 16.8694 26.2051 17.2579M31.7091 25.2605C33.3538 23.9585 36.7401 23.0072 36.7401 26.3681C36.7401 29.7289 34.4386 39.0473 31.7091 37.3048C26.8611 34.21 42.8367 34.6528 42.8367 39.8112C42.8367 44.9696 32.7626 48.3912 21.1534 48.3912C9.54413 48.3912 1.16214 44.3237 1.16211 38.9551C1.16208 33.5865 15.7075 32.9941 15.7075 32.9941M12.509 17.2579C11.4837 11.1707 20.8488 12.1535 22.0741 15.2679C23.2995 18.3822 16.8405 14.6983 17.5732 9.24344C18.0672 5.56586 23.2995 3.79585 23.2995 6.84412C23.2995 8.24419 19.1815 5.55178 21.1534 1.12726"
-                      stroke="#bc9548"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                  <!-- Вот по сюда, всю свг, ты правильно !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
                   <p class="about__first-text">Coffee Bar</p>
                   <p class="about__second-text">Hidden text</p>
                   <div class="line4"></div>
                 </a>
               </div>
+              <!-- WI-FI -->
               <div class="about__item-list-amenities">
-                <!-- WI-FI -->
-                <a href="#" class="about__item-link">
+                <a
+                  href="#"
+                  class="about__item-link about__item-link--stroke about__item-link--circle"
+                >
                   <svg
                     class="about__item-svg"
                     width="46"
@@ -212,42 +182,6 @@
                       cy="33.7004"
                       r="1.88851"
                       stroke="white"
-                      stroke-width="1.5"
-                    />
-                  </svg>
-
-                  <!-- For hover -->
-                  <svg
-                    class="about__item-svg-hover"
-                    width="46"
-                    height="37"
-                    viewBox="0 0 46 37"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.33726 11.3522C1.33726 11.3522 9.60065 1.3458 23.1843 1.3458C36.7679 1.3458 45.0313 11.3522 45.0313 11.3522"
-                      stroke="#bc9548"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      d="M8.21848 17.4044C11.4082 14.6131 16.5535 11.3521 23.1844 11.3521C29.8154 11.3521 34.9607 14.6131 38.1504 17.4044"
-                      stroke="#bc9548"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      d="M14.4795 24.9838C16.8095 23.4381 19.7467 22.2045 23.187 22.2045C26.6274 22.2045 29.5646 23.4381 31.8945 24.9838"
-                      stroke="#bc9548"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                    <circle
-                      cx="23.1854"
-                      cy="33.7004"
-                      r="1.88851"
-                      stroke="#bc9548"
                       stroke-width="1.5"
                     />
                   </svg>
@@ -256,9 +190,9 @@
                   <div class="line4"></div>
                 </a>
               </div>
+              <!-- On site ice machine -->
               <div class="about__item-list-amenities">
-                <!-- On site ice machine -->
-                <a href="#" class="about__item-link">
+                <a href="#" class="about__item-link about__item-link--stroke">
                   <svg
                     class="about__item-svg"
                     width="48"
@@ -288,41 +222,6 @@
                     <path
                       d="M40.2953 39.9711C40.2953 39.9711 38.3458 38.0215 36.8243 36.5001M8.01038 7.68616C8.01038 7.68616 9.93187 9.60765 11.4815 11.1572M36.8243 36.5001C40.2916 36.3848 43.2695 36.9969 43.2695 36.9969M36.8243 36.5001C36.4867 40.1897 37.3212 42.9453 37.3212 42.9453M36.8243 36.5001C27.3154 26.9912 20.9903 20.6661 11.4815 11.1572M11.4815 11.1572C9.04109 12.1204 5.0362 10.6603 5.0362 10.6603M11.4815 11.1572C12.846 8.19066 10.9846 4.71198 10.9846 4.71198"
                       stroke="white"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-
-                  <!-- For hover -->
-                  <svg
-                    class="about__item-svg-hover"
-                    width="48"
-                    height="48"
-                    viewBox="0 0 48 48"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M24.1534 1C24.1534 1 24.1534 3.75714 24.1534 5.90885M24.1534 46.6578C24.1534 46.6578 24.1534 43.9404 24.1534 41.749M24.1534 5.90885C21.6201 3.53858 19.9473 1 19.9473 1M24.1534 5.90885C27.0011 3.53858 28.3595 1 28.3595 1M24.1534 5.90885C24.1534 19.3564 24.1534 28.3014 24.1534 41.749M24.1534 41.749C26.56 42.7936 28.3595 46.6578 28.3595 46.6578M24.1534 41.749C21.0908 42.8818 19.9473 46.6578 19.9473 46.6578"
-                      stroke="#BC9548"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      d="M46.9824 23.8289C46.9824 23.8289 44.2253 23.8289 42.0736 23.8289M1.32458 23.8289C1.32458 23.8289 4.04198 23.8289 6.23343 23.8289M42.0736 23.8289C44.4438 21.2956 46.9824 19.6228 46.9824 19.6228M42.0736 23.8289C44.4438 26.6766 46.9824 28.0351 46.9824 28.0351M42.0736 23.8289C28.626 23.8289 19.681 23.8289 6.23343 23.8289M6.23343 23.8289C5.18886 26.2356 1.32458 28.0351 1.32458 28.0351M6.23343 23.8289C5.10064 20.7663 1.32458 19.6228 1.32458 19.6228"
-                      stroke="#BC9548"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      d="M40.2945 7.6861C40.2945 7.6861 38.3449 9.63569 36.8234 11.1572M8.00953 39.9711C8.00953 39.9711 9.93102 38.0496 11.4806 36.5M36.8234 11.1572C36.7081 7.68983 37.3203 4.71191 37.3203 4.71191M36.8234 11.1572C40.5131 11.4948 43.2687 10.6603 43.2687 10.6603M36.8234 11.1572C27.3145 20.6661 20.9895 26.9911 11.4806 36.5M11.4806 36.5C12.4437 38.9404 10.9837 42.9453 10.9837 42.9453M11.4806 36.5C8.51403 35.1354 5.03535 36.9969 5.03535 36.9969"
-                      stroke="#BC9548"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      d="M40.2953 39.9711C40.2953 39.9711 38.3458 38.0215 36.8243 36.5001M8.01038 7.68616C8.01038 7.68616 9.93187 9.60765 11.4815 11.1572M36.8243 36.5001C40.2916 36.3848 43.2695 36.9969 43.2695 36.9969M36.8243 36.5001C36.4867 40.1897 37.3212 42.9453 37.3212 42.9453M36.8243 36.5001C27.3154 26.9912 20.9903 20.6661 11.4815 11.1572M11.4815 11.1572C9.04109 12.1204 5.0362 10.6603 5.0362 10.6603M11.4815 11.1572C12.846 8.19066 10.9846 4.71198 10.9846 4.71198"
-                      stroke="#BC9548"
                       stroke-width="1.5"
                       stroke-linecap="round"
                     />
@@ -333,38 +232,194 @@
                   </p>
                   <div class="line4"></div>
                 </a>
-                <!-- <p class="about__item-list-amenities-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p> -->
               </div>
+              <!-- Vending machines -->
               <div class="about__item-list-amenities">
-                <img
-                  src="/img/about__vending-machines.svg"
-                  alt="vending machines"
-                />
-                <p>Vending machines</p>
+                <a
+                  href="#"
+                  class="about__item-link about__item-link--stroke about__item-link--ellipse"
+                >
+                  <svg
+                    width="43"
+                    height="57"
+                    viewBox="0 0 43 57"
+                    class="about__item-svg"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.11652 49.0261C12.588 49.0261 28.5336 49.0261 28.5336 49.0261M0.947266 55.3912L0.947366 1.23712L41.4768 1.23714V55.3912H0.947266ZM7.11652 8.27908H28.5336V41.1457H7.11652V8.27908Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                    <ellipse
+                      rx="1.80959"
+                      ry="1.77941"
+                      transform="matrix(-1 0 0 1 35.7217 18.5588)"
+                      stroke="white"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M35.8086 10.631C35.8086 10.631 35.8086 12.5053 35.8086 13.2203"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <p class="about__first-text">Vending machines</p>
+                  <p class="about__second-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <div class="line4"></div>
+                </a>
               </div>
+              <!-- Hot tub -->
               <div class="about__item-list-amenities">
-                <img src="/img/about__hot-tub.svg" alt="Hot tub" />
-                <p>Hot tub</p>
+                <a href="#" class="about__item-link about__item-link--stroke">
+                  <svg
+                    width="60"
+                    height="42"
+                    viewBox="0 0 60 42"
+                    class="about__item-svg"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.9462 36.814C2.64764 37.9458 -3.58026 8.50536 4.24077 1.97723C8.30032 -1.41123 12.3513 3.47733 12.3513 3.47733C12.3513 3.47733 10.4669 4.07119 9.85796 5.45242C8.70262 8.07307 22.7839 4.27444 15.8434 3.25564M13.9462 36.814C25.2447 35.6823 29.4321 35.7412 39.3057 36.814M13.9462 36.814C13.9462 36.814 11.3128 37.9164 9.85796 40.5808M39.3057 36.814C51.7618 38.1674 55.0042 15.3895 58.9233 18.121C62.8423 20.8525 30.6127 24.6594 5.00904 18.121M39.3057 36.814C39.3057 36.814 42.9798 38.2281 44.4988 40.5808"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M51.5467 11.1877C51.5467 11.1877 49.6149 11.959 49.7215 13.2155C49.7885 14.0052 49.9313 13.8486 50.01 14.6305C50.1379 15.9013 47.8388 16.9611 47.8388 16.9611"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M43.9017 6.26725C43.9017 6.26725 41.3191 7.77034 41.7374 9.53284C42.0002 10.6405 42.17 10.388 42.448 11.4821C42.8997 13.2605 39.8561 15.2509 39.8561 15.2509"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <p class="about__first-text">Hot tub</p>
+                  <p class="about__second-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <div class="line4"></div>
+                </a>
               </div>
+              <!-- Free parking -->
               <div class="about__item-list-amenities">
-                <img src="/img/about__free-parking.svg" alt="Free parking" />
-                <p>Free parking</p>
+                <a href="#" class="about__item-link about__item-link--stroke">
+                  <svg
+                    width="35"
+                    height="48"
+                    viewBox="0 0 35 48"
+                    class="about__item-svg"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.9749 0.922913C22.0902 0.922913 26.5524 2.21109 29.3615 4.78745C32.1707 7.34269 33.5752 10.8693 33.5752 15.3674C33.5752 17.3947 33.2619 19.3375 32.6352 21.1959C32.0086 23.0331 30.9822 24.6698 29.556 26.1058C28.1514 27.5418 26.2715 28.6821 23.9161 29.5268C21.5607 30.3504 18.6544 30.7622 15.1969 30.7622H10.886V46.5807H0.837826L0.837891 0.922913H15.9749ZM15.4563 8.96876H10.886V22.7164H14.1921C16.0721 22.7164 17.7036 22.4735 19.0865 21.9878C20.4695 21.5021 21.5391 20.7419 22.2954 19.7071C23.0517 18.6723 23.4299 17.3419 23.4299 15.7159C23.4299 13.4351 22.7816 11.7457 21.4851 10.6476C20.1886 9.52838 18.179 8.96876 15.4563 8.96876Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                  <p class="about__first-text">Free parking</p>
+                  <p class="about__second-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <div class="line4"></div>
+                </a>
               </div>
+              <!-- Business center -->
               <div class="about__item-list-amenities">
-                <img
-                  src="/img/about__business-center.svg"
-                  alt="Business center"
-                />
-                <p>Business center</p>
+                <a
+                  href="#"
+                  class="about__item-link about__item-link--stroke about__item-link--circle"
+                >
+                  <svg
+                    width="49"
+                    height="48"
+                    viewBox="0 0 49 48"
+                    class="about__item-svg"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24.5223 21.5102C31.0709 21.5419 41.3456 20.6197 41.3456 20.6197L41.3457 0.922668L7.64925 0.922668L7.64924 20.2672C7.64924 20.2672 16.2616 21.4703 24.5223 21.5102ZM24.5223 21.5102L24.5223 24.9081"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                    <circle
+                      cx="24.4968"
+                      cy="26.1517"
+                      r="1.16286"
+                      stroke="white"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M4.51161 40.5616C4.51161 37.9026 3.1893 34.4114 9.30788 33.327C13.0002 32.6727 14.2791 34.0441 14.1975 38.1036"
+                      stroke="white"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M44.4825 40.5616C44.4825 37.9026 45.8048 34.4114 39.6863 33.327C35.9939 32.6727 34.7151 34.0441 34.7966 38.1036"
+                      stroke="white"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M19.2786 37.6381C19.2786 34.0288 19.2786 31.5762 24.6437 31.5762C29.7148 31.5762 29.7146 34.3244 29.7148 37.6381"
+                      stroke="white"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M2.70429 46.5805C1.52232 45.7965 0.869141 44.9354 0.869141 44.0317C0.869141 40.395 11.448 37.4468 24.4978 37.4468C37.5475 37.4468 48.1264 40.395 48.1264 44.0317C48.1264 44.9354 47.4733 45.7965 46.2913 46.5805"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <p class="about__first-text">Business center</p>
+                  <p class="about__second-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <div class="line4"></div>
+                </a>
               </div>
+              <!-- Laundry facilities -->
               <div class="about__item-list-amenities">
-                <img
-                  src="/img/about__laundry-facilities.svg"
-                  alt="Loundry facilities"
-                />
-                <p>Laundry facilities</p>
+                <a href="#" class="about__item-link about__item-link--stroke">
+                  <svg
+                    width="38"
+                    height="49"
+                    viewBox="0 0 38 49"
+                    class="about__item-svg"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.53407 12.0476C4.53407 12.0476 4.78467 12.0476 9.51786 12.0476M28.4215 12.0476H30.2092M33.6826 12.0476H31.8948M6.20701 7.77823C6.20701 7.77823 4.53407 7.45072 4.53407 5.61194C4.53407 3.25048 7.51332 3.48233 7.51332 3.48233M7.51332 3.48233H20.1556M7.51332 3.48233C7.51332 3.48233 6.41255 3.48233 6.41255 2.26476C6.41255 1.04718 7.51332 1.04718 7.51332 1.04718H20.1556C20.1556 1.04718 21.347 1.04718 21.347 2.26476C21.347 3.48233 20.1556 3.48233 20.1556 3.48233M20.1556 3.48233H23.5829C23.5829 3.48233 27.3585 3.48233 26.0987 7.48123M1.46927 47.5806L1.46875 7.77823H36.5296L36.5297 47.5806H1.46927Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M30.2643 21.978C31.5757 24.0666 32.334 26.5376 32.334 29.1858C32.334 31.8339 31.5757 34.305 30.2643 36.3936M30.2643 21.978C30.2643 21.978 27.172 24.3571 27.172 29.1858C27.172 35.3903 30.2643 36.3936 30.2643 36.3936M30.2643 21.978C29.8086 21.2522 29.2861 20.5725 28.7054 19.9477M30.2643 36.3936C27.8634 40.2176 23.6086 42.7597 18.7601 42.7597C11.2634 42.7597 5.18618 36.6824 5.18618 29.1858C5.18618 21.6891 11.2634 15.6119 18.7601 15.6119C21.6136 15.6119 24.2615 16.4924 26.4468 17.9965M26.4468 17.9965C27.2699 18.563 28.0273 19.218 28.7054 19.9477M26.4468 17.9965L28.7054 19.9477"
+                      stroke="white"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                  <p class="about__first-text">Laundry facilities</p>
+                  <p class="about__second-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <div class="line4"></div>
+                </a>
               </div>
             </div>
           </div>
