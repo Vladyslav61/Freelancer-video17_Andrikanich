@@ -14,7 +14,7 @@
     />
     <title>Ponderosa</title>
   </head>
-  <body>
+  <body id="body">
     <header class="header">
       <!-- Header with navigation -->
       <!-- Main menu -->
@@ -38,6 +38,32 @@
         <a href="#" class="book-button">Book now</a>
       </div>
     </header>
+    <!-- Changing view menu if was scroll page -->
+    <script>
+      // console.log(document.getElementById("body"));
+      // document
+      //   .getElementById("body")
+      //   .addEventListener("scroll", menuInScroll());
+      window.onscroll = function () {
+        menuInScroll();
+      };
+
+      function menuInScroll() {
+        let y = document.documentElement.scrollTop;
+        // console.log(y);
+
+        if (y > 30) {
+          document.querySelector("header").classList.add("header--in-scroll");
+          // console.log(document.querySelector("header"));
+        }
+        if (y <= 30) {
+          document
+            .querySelector("header")
+            .classList.remove("header--in-scroll");
+          // console.log(document.querySelector("header"));
+        }
+      }
+    </script>
     <!-- Main sections of the site-->
     <main>
       <section class="hero">
@@ -117,7 +143,7 @@
             <div class="line3"></div>
           </div>
         </div>
-        <!-- Information aout hotel aminities-->
+        <!-- Information aout hotel amenities-->
         <div class="about__amenities">
           <h1 class="about__amenities-text">hotel amenities</h1>
           <div class="about__wrapper">
@@ -147,10 +173,7 @@
               </div>
               <!-- WI-FI -->
               <div class="about__item-list-amenities">
-                <a
-                  href="#"
-                  class="about__item-link about__item-link--stroke about__item-link--circle"
-                >
+                <a href="#" class="about__item-link">
                   <svg
                     class="about__item-svg"
                     width="46"
@@ -192,7 +215,7 @@
               </div>
               <!-- On site ice machine -->
               <div class="about__item-list-amenities">
-                <a href="#" class="about__item-link about__item-link--stroke">
+                <a href="#" class="about__item-link">
                   <svg
                     class="about__item-svg"
                     width="48"
@@ -235,10 +258,7 @@
               </div>
               <!-- Vending machines -->
               <div class="about__item-list-amenities">
-                <a
-                  href="#"
-                  class="about__item-link about__item-link--stroke about__item-link--ellipse"
-                >
+                <a href="#" class="about__item-link">
                   <svg
                     width="43"
                     height="57"
@@ -276,7 +296,7 @@
               </div>
               <!-- Hot tub -->
               <div class="about__item-list-amenities">
-                <a href="#" class="about__item-link about__item-link--stroke">
+                <a href="#" class="about__item-link">
                   <svg
                     width="60"
                     height="42"
@@ -313,7 +333,7 @@
               </div>
               <!-- Free parking -->
               <div class="about__item-list-amenities">
-                <a href="#" class="about__item-link about__item-link--stroke">
+                <a href="#" class="about__item-link">
                   <svg
                     width="35"
                     height="48"
@@ -337,10 +357,7 @@
               </div>
               <!-- Business center -->
               <div class="about__item-list-amenities">
-                <a
-                  href="#"
-                  class="about__item-link about__item-link--stroke about__item-link--circle"
-                >
+                <a href="#" class="about__item-link">
                   <svg
                     width="49"
                     height="48"
@@ -393,7 +410,7 @@
               </div>
               <!-- Laundry facilities -->
               <div class="about__item-list-amenities">
-                <a href="#" class="about__item-link about__item-link--stroke">
+                <a href="#" class="about__item-link">
                   <svg
                     width="38"
                     height="49"

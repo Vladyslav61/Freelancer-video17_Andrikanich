@@ -54,11 +54,22 @@ body {
 
 /* Header */
 .header {
-  /* position: fixed; */
+  position: fixed;
   /* fixed здесь не работает */
-  position: relative;
+  /* position: relative; */
   top: 32px;
-  min-width: 935px;
+  width: 100%;
+  /* min-width: 935px; */
+  z-index: 2;
+  transition-duration: 0.3s;
+}
+/* Menu when was a scrolling page */
+.header--in-scroll {
+  background-color: rgba(245, 244, 236, 0.775);
+  top: 0px;
+  padding-top: 32px;
+  padding-bottom: 15px;
+  transition-duration: 0.3s;
 }
 .header__menu {
   height: 48px;
@@ -340,35 +351,37 @@ body {
 .about__item-link:hover {
   color: var(--color-bg-button-main-menu);
 }
-.about__item-link--stroke:hover path,
-.about__item-link--circle:hover circle,
-.about__item-link--stroke:hover ellipse {
+
+.about__item-link:hover path,
+.about__item-link:hover circle,
+.about__item-link:hover ellipse {
   stroke: var(--color-bg-button-main-menu);
 }
-.about__item-link:hover > .about__item-svg-hover {
-  display: block;
-  margin: auto;
-}
+
 .about__item-link > .about__first-text {
   text-align: center;
 }
 .about__item-link > .about__second-text {
-  display: none;
+  /* display: none; */
+  visibility: hidden;
   text-align: center;
   font-size: 14px;
   text-transform: none;
 }
 .about__item-link:hover > .about__second-text {
-  display: block;
+  /* display: block; */
+  visibility: visible;
 }
 .line4 {
   border: 1px solid var(--color-bg-button-main-menu);
   width: 144px;
   margin: 60px auto 0;
-  display: none;
+  /* display: none; */
+  visibility: hidden;
 }
 .about__item-link:hover > .line4 {
-  display: block;
+  /* display: block; */
+  visibility: visible;
 }
 .about__item-list-amenities:nth-child(3) {
   color: var(--color-bg-button-main-menu);
